@@ -21,10 +21,12 @@ export class PostListItemComponent implements OnInit {
     return this.postStatus;
   }
   onLoveIt(){
-    console.log("loveIt");
+    this.loveIts = this.loveIts+ 1;
+    console.log(this.loveIts);
   }
   dontLoveIt(){
-    console.log("don't love it");
+    this.loveIts = this.loveIts -1;
+    console.log(this.loveIts);
   }
   getColor(){
     if(this.loveIts>=0){
