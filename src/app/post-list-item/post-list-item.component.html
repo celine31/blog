@@ -1,7 +1,7 @@
-<li class="list-group-item">
-  <h4>Ceci est mon {{postName}} {{getPostStatus()}}</h4>
+<li class="list-group-item" [ngStyle]="{backgroundColor:getColor()}">
+  <h4>Ceci est mon {{title}}</h4>
   <p> Mis à jour </p>
-  <p>Lorem ipsum  :sqdjhfqlbskgjkjhgjghsqgdqdjqyghqkyjsdgfqsjdyg</p>
+  <p>{{content}}</p>
   <button class="btn btn-success" (click)="onLoveIt" >Love it</button>
   <button class="btn btn-success" (click)="notLoveIt">Don't love it</button>
 </li>
