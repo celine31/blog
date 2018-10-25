@@ -28,8 +28,10 @@ export class PostListItemComponent implements OnInit {
     console.log(this.loveIts);
   }
   getColor(){
-    if(this.loveIts>=0){
+    if(this.loveIts>0){
       return 'greenyellow';
+    }else if(this.loveIts==0){
+      return 'white';
     }else return 'tomato';
   }
 }
