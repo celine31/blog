@@ -17,10 +17,7 @@ export class PostListItemComponent implements OnInit {
 
   ngOnInit() {
   }
-  getPostStatus(){
-    return this.postStatus;
-  }
-  onLoveIt(){
+   onLoveIt(){
     this.loveIts = this.loveIts+ 1;
     console.log(this.loveIts);
   }
@@ -30,7 +27,7 @@ export class PostListItemComponent implements OnInit {
   }
   getColor(){
     if(this.loveIts>=0){
-      return 'green';
-    }else return 'red';
+      return 'greenyellow';
+    }else return 'tomato';
   }
 }

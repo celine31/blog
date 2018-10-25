@@ -1,7 +1,7 @@
 <li class="list-group-item" [ngStyle]="{backgroundColor:getColor()}">
-  <h4>Ceci est mon {{title}}</h4>
+  <h2>Ceci est mon {{title}}</h2>
   <p> Mis à jour </p>
   <p>{{content}}</p>
-  <button class="btn btn-success" (click)="onLoveIt()" >Love it</button>
-  <button class="btn btn-success" (click)="dontLoveIt()">Don't love it</button>
+  <button class="btn btn-success" (click)="onLoveIt()">Love it</button>
+  <button class="btn btn-danger" (click)="dontLoveIt()">Don't love it</button>
 </li>
