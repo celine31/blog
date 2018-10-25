@@ -1,6 +1,6 @@
 <li class="list-group-item" [ngStyle]="{backgroundColor:getColor()}">
   <h2>Ceci est mon {{title}}</h2>
-  <p> Mis à jour </p>
+  <p> Mis à jour {{lastUpdate | date :'short'}}</p>
   <p>{{content}}</p>
   <button class="btn btn-success" (click)="onLoveIt()">Love it</button>
   <button class="btn btn-danger" (click)="dontLoveIt()">Don't love it</button>

@@ -10,8 +10,8 @@ export class PostListItemComponent implements OnInit {
   @Input() title:string;
   @Input() content : string;
   @Input() loveIts: number;
-  created_at:Date;
-  postStatus='loveIt';
+  @Input() lastUpdate: Date; 
+  
 
   constructor() { }
 
@@ -19,10 +19,12 @@ export class PostListItemComponent implements OnInit {
   }
    onLoveIt(){
     this.loveIts = this.loveIts+ 1;
+    this.lastUpdate=new Date();
     console.log(this.loveIts);
   }
   dontLoveIt(){
     this.loveIts = this.loveIts -1;
+    this.lastUpdate=new Date();
     console.log(this.loveIts);
   }
   getColor(){
